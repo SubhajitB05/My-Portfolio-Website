@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<input type="checkbox" id="toggle-mode" onclick="fun()">
+<label for="toggle-mode" id="toggle-label"></label>
+<body id="background">
+
+
+    <!-- Header Section  -->
+
+    <header class="header flex">
+        <div class="logo">
+            <a href="#">Portfolio</a>
+        </div>
+
+        <i class=" fa-2x fa-sharp fa-solid fa-bars" style="color:white" id="menu-icon"></i>
+        <!-- <i class="fa-sharp fa-solid fa-xmark" id="menu-icon"></i> -->
+        <nav class="navbar flex" id="sidebar">
+            <a href="#Home" class="active">Home</a>
+            <a href="#About">About</a>
+            <a href="#Education">Education</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section  -->
+
+    <section class="home flex" id="Home">
+        <div class="home-content">
+            <h2>Hello, It's Me</h2>
+            <h1>Subhajit Barman</h1>
+            <h3 class="designation">And I'm a <span> &lt Frontend Developer /&gt</span> </h3>
+
+            <div class="social-media flex">
+                <a href="https://github.com/SubhajitB05" target="_blank"><i class="fa-3x fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/subhajit-b-34b1a01ab/" target="_blank"><i class="fa-3x fa-brands fa-linkedin" target="_blank"></i></a>
+                <a href="https://instagram.com/subhajit_30x?igshid=NGExMmI2YTkyZg==" target="_blank"><i
+                        class="fa-3x fa-brands fa-instagram"></i></a>
+            </div>
+            <button class="primary-btn" id="btn" onclick="fun()">Download CV</button>
+        </div>
+        <div class="home-img">
+            <img src="myImg.JPG" class="myImg" alt="myImg">
+
+        </div>
+    </section>
+
+
+    <!-- About Section  -->
+
+    <section class="about flex" id="About">
+        <div class="about-img">
+            <img src="myImg.JPG" alt="" class="myImg">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>&lt Me /&gt</span> </h2>
+            <!-- <h3>Frontend Developer</h3> -->
+            <p>I am a 3rd year Computer Science and Engineering Student at Jalpaiguri Government Engineering College.
+            </p>
+            <p>A developer who loves to build cool things.</p>
+            <button class="primary-btn" id="btn2">Read More</button>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Education Section  -->
+
+    <section class="education" id="Education">
+        <h2 class="heading">My <span>&lt Education /&gt</span></h2>
+        <div class="main-edu-container container">
+            <div class="college flex">
+                <div class="college-container edu" id="edu1">
+                    <div class="college-heading flex">
+                        <div class="branch">
+                            <h3> B.Tech, CSE</h3>
+                        </div>
+                        <div class="year">
+                            2021-Present
+                        </div>
+                    </div>
+                    <div class="desrip">
+                        <p> <i class="fa-regular fa-circle-dot"></i> Currently pursuing my B.Tech in CSE from Jalpaiguri Government Engineering College, 9.48 CGPA
+                            till now.</p>
+                        <p><i class="fa-regular fa-circle-dot"></i> Highly active in the domains of Web development with Frontend part and MERN stack. Interested
+                            in Android development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tracking-line"></div>
+                <i class="fa-2x fa-sharp fa-solid fa-graduation-cap cap1"></i>
+                <i class="fa-2x fa-sharp fa-solid fa-graduation-cap cap2"></i>
+                <i class=" fa-2x fa-sharp fa-solid fa-graduation-cap cap3"></i>
+            
+            <div class="high-school flex">
+                <div class="hs-container edu">
+                    <div class="hs-heading flex">
+                        <div class="class">
+                            <h3>12th WBCHSE Board, PCMB</h3>
+                        </div>
+                        <div class="year">
+                            2018-2020
+                        </div>
+                    </div>
+                    <div class="desrip">
+                        <p> <i class="fa-regular fa-circle-dot"></i> Completed 12th borad exam from Ghogomali High School (H.S.) with 96% marks in aggregate.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondary-school flex">
+                <div class="se-container edu">
+                    <div class="se-heading flex">
+                        <div class="class">
+                            <h3>10th WBBSE Board</h3>
+                        </div>
+                        <div class="year">
+                            2018
+                        </div>
+                    </div>
+                    <div class="desrip">
+                        <p> <i class="fa-regular fa-circle-dot"></i> Completed 10th borad exam from Ghogomali High School (H.S.) with 93.14% marks in aggregate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- Skill Section  -->
+   <section id="Skills">
+    <div class="skill-section container">
+        <div class="heading">
+            <h2>My <span>&lt Skills /&gt</span></h2>
+        </div>
+        <div class="skill-container flex">
+            <div class="skill c">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">
+                            85%
+                        </div>
+                    </div>
+                </div>
+                <svg width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor1">
+                            <stop offset="0%" stop-color="#283593"></stop>
+                            <stop offset="100%" stop-color="#5c6bbe"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle class="circle1" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                </svg>
+
+                <h3>C</h3>
+            </div>
+            
+            <div class="skill c++">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">
+                            77%
+                        </div>
+                    </div>
+                </div>
+                <svg width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor2">
+                            <stop offset="0%" stop-color="#00579e"></stop>
+                            <stop offset="100%" stop-color="#669ad3"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle class="circle2" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                </svg>
+                <h3>C++</h3>
+            </div>
+
+            <div class="skill java">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">
+                            60%
+                        </div>
+                    </div>
+                </div>
+                <svg width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor3">
+                            <stop offset="0%" stop-color="#ec2025"></stop>
+                            <stop offset="100%" stop-color="#0d8ac7"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle class="circle3" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                </svg>
+                <h3>JAVA</h3>
+            </div>
+
+            <div class="skill html">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">
+                            88%
+                        </div>
+                    </div>
+                </div>
+                <svg width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor4">
+                            <stop offset="0%" stop-color="#f28741"></stop>
+                            <stop offset="100%" stop-color="#e44d26"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle class="circle4" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                </svg>
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill css">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">
+                            83%
+                        </div>
+                    </div>
+                </div>
+                <svg width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor5">
+                            <stop offset="0%" stop-color="#2965f1"></stop>
+                            <stop offset="100%" stop-color="#264d6"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle class="circle5" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                </svg>
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill javascript">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">
+                            45%
+                        </div>
+                    </div>
+                </div>
+                <svg width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor6">
+                            <stop offset="0%" stop-color="#f0bd25"></stop>
+                            <stop offset="100%" stop-color="#a77312"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle class="circle6" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                </svg>
+                <h3>JAVASCRIPT</h3>
+            </div>
+
+            <div class="skill bootstrap">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">
+                            12%
+                        </div>
+                    </div>
+                </div>
+                <svg width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor7">
+                            <stop offset="0%" stop-color="#710ef4"></stop>
+                            <stop offset="100%" stop-color="#2e1753"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle class="circle7" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                </svg>
+                <h3>BOOTSTRAP</h3>
+            </div>
+
+            <div class="skill react">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">
+                            1%
+                        </div>
+                    </div>
+                </div>
+                <svg width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor8">
+                            <stop offset="0%" stop-color="#00d8ff"></stop>
+                            <stop offset="100%" stop-color="#147c94"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle class="circle8" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                </svg>
+                <h3>REACT</h3>
+            </div>
+
+            <div class="skill git">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">
+                            45%
+                        </div>
+                    </div>
+                </div>
+                <svg width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor9"> 
+                            <stop offset="0%" stop-color="#de4c36"></stop>
+                            <stop offset="100%" stop-color="#e78c7d"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle class="circle9" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                </svg>
+                <h3>GIT</h3>
+            </div>
+
+            <div class="skill github">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">
+                            34%
+                        </div>
+                    </div>
+                </div>
+                <svg width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor10">
+                            <stop offset="0%" stop-color="#000000"></stop>
+                            <stop offset="100%" stop-color="#ffffff"></stop>
+                        </linearGradient>
+                    </defs>
+                    <circle class="circle10" cx="80" cy="80" r="70" stroke-linecap="round"></circle>
+                </svg>
+                <h3>GITHUB</h3>
+            </div>
+        </div>
+    </div>
+   </section>
+
+
+   <!-- Project Section  -->
+
+   <section id="Projects">
+    <div class="project-section container">
+        <div class="heading">
+            <h2>Recent <span> &lt Projects /&gt</span></h2>
+        </div>
+        <div class="project-container flex">
+            <div class="project-item">
+                <div class="proj-img">
+                    <img src="proj1.png" alt="..." class="proj-cover-img">
+                </div>
+                <div class="proj-descrip">
+                    <h3>UsabilityHub</h3>
+                    <p>This is the first project I made using only HTML and CSS</p>
+                </div>
+                <div class="proj-link flex">
+                    <a href="#"><span>GitHub repo</span></a>
+                    <a href="#"><span>Live</span></a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="proj-img" id="proj-item2">
+                    <img src="asset 13.svg" alt="..." class="proj-cover-img">
+                </div>
+                <div class="proj-descrip">
+                    <h3>Lovely Link</h3>
+                    <p>In this project grid layout is used</p>
+                </div>
+                <div class="proj-link flex">
+                    <a href="#"><span>GitHub repo</span></a>
+                    <a href="#"><span>Live</span></a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="proj-img">
+                    <img src="SignIn.PNG" alt="..." class="proj-cover-img">
+                </div>
+                <div class="proj-descrip">
+                    <h3>Sign In Page</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, facere.</p>
+                </div>
+                <div class="proj-link flex">
+                    <a href="#"><span>GitHub repo</span></a>
+                    <a href="#"><span>Live</span></a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="proj-img">
+                    <img src="proj1.png" alt="..." class="proj-cover-img">
+                </div>
+                <div class="proj-descrip">
+                    <h3>Heading</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="proj-link flex">
+                    <a href="#"><span>GitHub repo</span></a>
+                    <a href="#"><span>Live</span></a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="proj-img">
+                    <img src="proj1.png" alt="..." class="proj-cover-img">
+                </div>
+                <div class="proj-descrip">
+                    <h3>Heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio.</p>
+                </div>
+                <div class="proj-link flex">
+                    <a href="#"><span>GitHub repo</span></a>
+                    <a href="#"><span>Live</span></a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="proj-img">
+                    <img src="proj1.png" alt="..." class="proj-cover-img">
+                </div>
+                <div class="proj-descrip">
+                    <h3>heading</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="proj-link flex">
+                    <a href="#"><span>GitHub repo</span></a>
+                    <a href="#"><span>Live</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </section>
+
+
+<!-- Contact Section  -->
+
+    <section class="contact" id="Contact">
+        <h2 class="heading">Contact <span>&lt Me /&gt</span></h2>
+        <form action="#" class="form">
+            <div class="input-box">
+                <div class="name">
+                    <input type="text" placeholder="Full Name">
+                </div>
+                <div class="mail">
+                    <input type="email" placeholder="Email">
+                </div>
+
+            </div>
+            <div class="input-box">
+                <div class="number">
+                    <input type="number" placeholder="Phone Number">
+                </div>
+                <div class="subject">
+                    <input type="text" placeholder="Subject">
+                </div>
+
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="primary-btn">
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Subhajit Barman | All Right Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/8740aa20b3.js" crossorigin="anonymous"></script>
+    <script>
+        
+    </script>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

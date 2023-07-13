@@ -1,0 +1,198 @@
+
+@media screen and (max-width: 1150px) {
+    .home{
+        flex-direction: column-reverse;
+        padding-top: 11rem;
+        padding-bottom: 4rem;
+    }
+    .myImg{
+        width: 20rem;
+    }
+    .home-content{
+        text-align: center;
+    }
+    .home-content h3{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .home-content h1{
+        font-size: 3rem;
+    }
+    .designation{
+        margin-bottom: 18px;
+    }
+    .social-media{
+        justify-content: center;
+    }
+
+    #sidebar{
+        position: absolute;
+        left: -100%;
+        top: 100%;
+        width: 50%;
+        height: 100vh;
+        background-color: var(--second-bg-color);
+        opacity: 0.8;
+        flex-direction: column;
+        z-index: 1001;
+        align-items: center;
+        padding-top: 2rem;
+        gap: 2.5rem;
+        transition: 0.4s ease;
+    }
+    #sidebar.activate{
+        left: 0;
+    }
+    #menu-icon{
+        display: block;
+    }
+    
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .heading, h3{
+        margin-bottom: 1rem;
+    }
+    
+    #toggle-label{
+        right: 16%;
+    }
+
+    .edu{
+        width: 82%;
+    }
+    .college, .high-school, .secondary-school{
+        justify-content: end;
+        margin-bottom: 50px;
+        margin-right: 30px;
+
+    }
+    .tracking-line{
+        left: 6%;
+    }
+    .fa-graduation-cap{
+        left: 4%;
+    }
+    .cap2{
+        top: 50%;
+    }
+    .cap3{
+        top: 82%;
+    }
+}
+
+@media screen and (max-width:1290px) {
+    .main-edu-container, .project-container{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .skill-container{
+            margin-left: 40px;
+            margin-right: 40px;
+        
+    }
+    .form{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+
+
+@media screen and (max-width:845px) {
+    .portfolio .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .proj{
+        height: 22rem;
+    }
+    #toggle-label{
+        right: 20%;
+    }
+    .fa-graduation-cap{
+        left: 3%;
+    }
+
+}
+@media screen and (max-width:621px) {
+    .proj{
+        height: 16rem;
+    }
+    .name, .mail, .number, .subject{
+        width: 100%;
+    }
+    .fa-graduation-cap{
+        left: 1%;
+    }
+    .college, .high-school, .secondary-school{
+        margin-right: 0;
+    }
+    .tracking-line{
+        left: 5%;
+    }
+}
+@media screen and (max-width:535px) {
+    .tracking-line{
+        left: 4%;
+    }
+    .fa-graduation-cap{
+        left: -1%;
+    }
+    
+}
+@media screen and (max-width:470px) {
+    .proj{
+        height: 13rem;
+    }
+    .fa-graduation-cap{
+        left: -2%;
+    }
+}
+@media screen and (max-width:380px) {
+    .proj{
+        height: 11rem;
+    }
+    .fa-graduation-cap{
+        left: -4%;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .myImg{
+        width: 12rem;
+    }
+    .home{
+        padding-top: 8rem;
+    }
+    .home-content h3, .services h3{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .home-content h1{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .about{
+        gap: 4rem;
+        padding-block: 4rem;
+    }
+    .about h2, .education h2, #Skills h2, #Projects h2, .contact h2{
+        font-size: 1.5rem;
+    }
+    
+    .contact{
+
+        padding-bottom: 2rem;
+    }
+
+    .education h2, .contact h2{
+        margin-bottom: 1rem;
+    }
+    .contact form{
+        padding: 0 20px 0;
+    }
+
+}
